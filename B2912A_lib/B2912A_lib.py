@@ -124,6 +124,7 @@ class B2912A:
         self.triggerConfig(timePeriod,buffSize,0,source='TIM')  
         #Configuring CH2 source and measurement params
         self.sourceConfig(value=voltage2,ch=2,mode='VOLT')
+        self.senseConfig(limit=ilimit2, ch=2, mode='CURR')
         #Data formating
         self.dataFormat(dataType='ASC',elements=elem)
 
